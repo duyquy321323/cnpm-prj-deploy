@@ -10,7 +10,7 @@ function CancelPayment(){
                 <div class="details">
                 Your order has been cancelled successfully. If this was a mistake, please place a new order.
                 </div>
-                <a href="/" class="btn-home">Go to Home</a>
+                <a href="/cnpm-prj-deploy/" class="btn-home">Go to Home</a>
             </div>
             </div>
         </>

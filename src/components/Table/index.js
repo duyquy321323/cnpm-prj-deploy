@@ -65,7 +65,7 @@ function Table(props) {
                         {Object.values(item).map((data, id) => {
                           return (
                             <td key={id}>
-                              {(id < Object.values(item).length - 1 || location.pathname === '/dashboard') && Object.entries(item).at(id)[0] !== "action" ? (
+                              {(id < Object.values(item).length - 1 || location.pathname === '/cnpm-prj-deploy/dashboard') && Object.entries(item).at(id)[0] !== "action" ? (
                                 <div
                                   className={`${Object.entries(item).at(id)[0]} ${
                                     data === "Đang chờ" ? "pending" : ""
@@ -77,7 +77,7 @@ function Table(props) {
                                 data + "/5"
                               ) : Object.entries(item).at(
                                   Object.entries(item).length - 2
-                                )[1] === "Đã thanh toán" && location.pathname !== "/notification" ? (
+                                )[1] === "Đã thanh toán" && location.pathname !== "/cnpm-prj-deploy/notification" ? (
                                 <Button
                                   sx={{
                                     color: "#fff",
@@ -87,12 +87,12 @@ function Table(props) {
                                 >
                                   Đánh giá ngay
                                 </Button>
-                              ) : location.pathname === "/notification" || location.pathname === "/dashboard"? <Button
+                              ) : location.pathname === "/cnpm-prj-deploy/notification" || location.pathname === "/cnpm-prj-deploy/dashboard"? <Button
                               sx={{
                                 color: "#fff",
                                 background: "rgba(107, 226, 190, 0.24)",
                               }}
-                              onClick={() => item["tableId"]? navigate("/detail-order/" + item["tableId"] + "?order-type=bookingtable") : navigate("/detail-order/" + item["orderCode"] + "?order-type=delivery")}
+                              onClick={() => item["tableId"]? navigate("/cnpm-prj-deploy/detail-order/" + item["tableId"] + "?order-type=bookingtable") : navigate("/detail-order/" + item["orderCode"] + "?order-type=delivery")}
                             >
                               Xem chi tiết
                             </Button> : (

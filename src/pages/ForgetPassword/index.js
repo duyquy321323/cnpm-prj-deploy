@@ -52,7 +52,7 @@ function ForgetPassword() {
       dispatch(openBackDrop());
       await api.post(`users/verifyOtp`, formResetPass);
       showSnackbar("Đổi mật khẩu thành công");
-      navigate("/login");
+      navigate("/cnpm-prj-deploy/login");
     }catch(e){
       if(e.response.status === 400){
         showSnackbar("Tài khoản không tồn tại");
@@ -74,7 +74,7 @@ function ForgetPassword() {
       {/* Left Section */}
       <div className="welcome-section">
         <h1>No Worries.!!</h1>
-        <button className="skip-button" onClick={() => navigate("/login")}>
+        <button className="skip-button" onClick={() => navigate("/cnpm-prj-deploy/login")}>
           Take me back.!
         </button>
       </div>
@@ -114,7 +114,7 @@ function ForgetPassword() {
               {/* Footer Links */}
             <p className="register-link">
               Chưa có tài khoản?{" "}
-              <a href="#" onClick={() => navigate("/sign-up")}>
+              <a href="#" onClick={() => navigate("/cnpm-prj-deploy/sign-up")}>
                 Đăng kí
               </a>
             </p>

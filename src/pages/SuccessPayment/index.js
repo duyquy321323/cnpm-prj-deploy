@@ -28,7 +28,7 @@ function SuccessPayment(){
                 <div class="details">
                 Thank you for your payment. Your transaction has been completed successfully.
                 </div>
-                <a href="/" class="btn-home">Go to Home</a>
+                <a href="/cnpm-prj-deploy/" class="btn-home">Go to Home</a>
             </div>
         </div>
         </>

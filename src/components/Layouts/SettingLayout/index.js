@@ -43,7 +43,7 @@ function SettingLayout() {
         <div className="container-setting-layout">
           {listTab.map((item) => (
             <>
-              <NavLink to={"/setting" + item.pathname}>
+              <NavLink to={"/cnpm-prj-deploy/setting" + item.pathname}>
                 <div
                   className={
                     "container-component-setting-tab " +

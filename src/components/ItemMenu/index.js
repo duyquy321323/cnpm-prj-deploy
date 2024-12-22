@@ -16,7 +16,7 @@ function ItemMenu(props) {
   }
 
   function handleDetails(e){
-    navigate(`/detail-food/${item.slug}`)
+    navigate(`/cnpm-prj-deploy/detail-food/${item.slug}`)
   }
   return (
     <section className="container-item-menu">

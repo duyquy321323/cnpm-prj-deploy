@@ -12,13 +12,13 @@ const ActionButtons = () => {
         <CiTimer className='icon' /> 
         <button className="action-btn" onClick={() => {
           dispatch(dineInAction());
-          navigate("/menu?order-type=Dine In");
+          navigate("/cnpm-prj-deploy/menu?order-type=Dine In");
           }}>Thực đơn</button>
         <button className="action-btn1" onClick={() => {
           dispatch(deliveryAction());
-          navigate("/menu?order-type=Delivery");
+          navigate("/cnpm-prj-deploy/menu?order-type=Delivery");
           }}>Giao tận nơi</button>
-        <button className="action-btn2" onClick={() => navigate("/book-table")} >Đặt bàn</button>
+        <button className="action-btn2" onClick={() => navigate("/cnpm-prj-deploy/book-table")} >Đặt bàn</button>
       </div>
     </div>
   );

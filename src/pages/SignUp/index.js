@@ -37,7 +37,7 @@ function SignUp() {
       dispatch(openBackDrop());
       await api.post(`users/register`, formRegister);
       showSnackbar("Đăng ký tài khoản thành công");
-      navigate("/login");
+      navigate("/cnpm-prj-deploy/login");
     }catch(e){
       if(e.response.status === 400){
         showSnackbar("Email đã được sử dụng, vui lòng chọn email khác");
@@ -146,7 +146,7 @@ function SignUp() {
                 <div className="register-link">
                   <p>
                     Đã có tài khoản?{" "}
-                    <a href="#" onClick={() => navigate("/login")}>
+                    <a href="#" onClick={() => navigate("/cnpm-prj-deploy/login")}>
                       Đăng nhập
                     </a>
                   </p>

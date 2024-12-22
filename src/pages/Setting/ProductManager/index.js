@@ -73,7 +73,7 @@ function ProductManager(){
     }, [slugStorage])
 
     function handleAddNewFood(){
-        navigate("/setting/product-manager/add-new-food");
+        navigate("/cnpm-prj-deploy/setting/product-manager/add-new-food");
     }
 
     // Mới vào trang thì tự load navbar đầu tiên

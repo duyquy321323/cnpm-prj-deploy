@@ -36,7 +36,7 @@ const handleLoginSubmit = async (event) => {
     if (res && res.data.token) {
       dispatch(login(res.data));
       showSnackbar("Đăng nhập thành công");
-      navigate("/");
+      navigate("/cnpm-prj-deploy/");
     }
   } catch (error) {
     if(error.response.data.message){
@@ -99,7 +99,7 @@ const handleLoginSubmit = async (event) => {
                         <button 
                                 type="submit"
                                 > Đăng Nhập </button>
-                        <div className="forgot-password" onClick={() => navigate('/forget-password')}>Quên mật khẩu?</div>
+                        <div className="forgot-password" onClick={() => navigate('/cnpm-prj-deploy/forget-password')}>Quên mật khẩu?</div>
                         <div className="social-login">
                               <div className="or-divider">
                                   <hr />
@@ -121,7 +121,7 @@ const handleLoginSubmit = async (event) => {
                         </form>
                         <div className="information-link">
                             <div className="register-link">
-                                <p>Chưa có tài khoản?  <a href="#" onClick={() => navigate('/sign-up')}>Đăng kí</a></p>
+                                <p>Chưa có tài khoản?  <a href="#" onClick={() => navigate('/cnpm-prj-deploy/sign-up')}>Đăng kí</a></p>
                             </div>
                             <div className="footer-links">
                             <a href="#">Terms & Conditions</a>

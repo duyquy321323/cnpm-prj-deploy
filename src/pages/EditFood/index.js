@@ -26,7 +26,7 @@ function EditFood() {
     try {
       dispatch(openBackDrop());
       await api.patch(`admin/dish/edit/${slug}`, food);
-      navigate("/setting/product-manager");
+      navigate("/cnpm-prj-deploy/setting/product-manager");
       showSnackbar("Cập nhật món ăn thành công")
     } catch (e) {
       showSnackbar("Có lỗi xảy ra, vui lòng thử lại sau ít phút");

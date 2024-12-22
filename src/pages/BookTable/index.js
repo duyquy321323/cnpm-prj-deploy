@@ -37,7 +37,7 @@ const BookTable = () => {
       console.log(formData)
       await api.post(`table/create`, formData);
       showSnackbar("Đặt bàn thành công");
-      navigate("/menu?order-type=Dine In");
+      navigate("/cnpm-prj-deploy/menu?order-type=Dine In");
     }catch(e){
       if(e.response.status === 400){
         showSnackbar("Không có bàn nào sẵn trong thời gian này");
@@ -62,10 +62,10 @@ const BookTable = () => {
         <h2>Hãy đặt chỗ trước</h2>
         <div className="action-buttons">
         <CiTimer className='icon' /> 
-          <button className="action-btn" onClick={() => navigate("/menu?order-type=Dine In")}>
+          <button className="action-btn" onClick={() => navigate("/cnpm-prj-deploy/menu?order-type=Dine In")}>
             Thực đơn
           </button>
-          <button className="action-btn1" onClick={() => navigate("/menu?order-type=Delivery")}>
+          <button className="action-btn1" onClick={() => navigate("/cnpm-prj-deploy/menu?order-type=Delivery")}>
             Giao tận nơi
           </button>
           <button className="action-btn2 active">Đặt bàn</button>

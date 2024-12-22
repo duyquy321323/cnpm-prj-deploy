@@ -153,7 +153,7 @@ function DetailOrder() {
             </div>
             {order && order.bookingId? <></> : <div className="total"><p>Tổng tiền: </p><p>{order ? order.totalAmount : "0"}đ</p></div>}
             <div className="group-btn">
-              <button type="button" onClick={() => navigate("/notification")}>Quay lại</button>
+              <button type="button" onClick={() => navigate("/cnpm-prj-deploy/notification")}>Quay lại</button>
               <button type="button" onClick={() => {}}>Hoàn thành</button>
             </div>
           </div>

@@ -9,27 +9,27 @@ function Header() {
   const dispatch = useDispatch();
   const listHeader = [
     {
-      path: "/menu",
+      path: "/cnpm-prj-deploy/menu",
       title: "Thực đơn",
     },
     {
-      path: "/dashboard",
+      path: "/cnpm-prj-deploy/dashboard",
       title: "Trang chủ",
     },
     {
-      path: "/notification",
+      path: "/cnpm-prj-deploy/notification",
       title: "Thông báo",
     },
     {
-      path: "/detail-order",
+      path: "/cnpm-prj-deploy/detail-order",
       title: "Chi tiết đơn hàng",
     },
     {
-      path: "/setting",
+      path: "/cnpm-prj-deploy/setting",
       title: "Cài đặt",
     },
     {
-      path: "/history",
+      path: "/cnpm-prj-deploy/history",
       title: "Lịch sử",
     },
   ];
@@ -76,10 +76,10 @@ function Header() {
         <div
           className={
             "right-header" +
-            (location.pathname.includes("/setting") ||
-            location.pathname.includes("/dashboard") ||
-            location.pathname.includes("/history") ||
-            location.pathname.includes("/notification")
+            (location.pathname.includes("/cnpm-prj-deploysetting") ||
+            location.pathname.includes("/cnpm-prj-deploy/dashboard") ||
+            location.pathname.includes("/cnpm-prj-deploy/history") ||
+            location.pathname.includes("/cnpm-prj-deploy/notification")
               ? " hidden"
               : "")
           }

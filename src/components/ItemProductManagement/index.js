@@ -10,7 +10,7 @@ function ItemProductManagement(props){
     const navigate = useNavigate();
     const dispatch = useDispatch()
     function handleEditFood(){
-        navigate(`/setting/product-manager/edit-food/${item.slug}`);
+        navigate(`/cnpm-prj-deploy/setting/product-manager/edit-food/${item.slug}`);
     }
 
     function handleRemoveFood(){

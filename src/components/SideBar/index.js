@@ -30,36 +30,36 @@ function SideBar() {
     {
       iconWhite: HomeWhiteIcon,
       iconOrange: HomeOrangeIcon,
-      navigate: `/menu/?order-type=${orderType === "DELIVERY"? "Delivery" : "Dine In"}`,
+      navigate: `/cnpm-prj-deploy/menu/?order-type=${orderType === "DELIVERY"? "Delivery" : "Dine In"}`,
     },
     {
       iconWhite: SettingWhiteIcon,
       iconOrange: SettingOrangeIcon,
-      navigate: "/setting/update-information",
+      navigate: "/cnpm-prj-deploy/setting/update-information",
     },
     {
       iconWhite: HistoryWhiteIcon,
       iconOrange: HistoryOrangeIcon,
-      navigate: "/history",
+      navigate: "/cnpm-prj-deploy/history",
     },
     {
       iconWhite: LogoutWhiteIcon,
       iconOrange: LogoutOrangeIcon,
-      navigate: "/login",
+      navigate: "/cnpm-prj-deploy/login",
     },
   ];
   if(userData && userData.user && (userData.user.role === 'staff' || userData.user.role === 'admin')){
     listTab.splice(1, 0, {
       iconWhite: GraphWhiteIcon,
       iconOrange: GraphOrangeIcon,
-      navigate: "/dashboard",
+      navigate: "/cnpm-prj-deploy/dashboard",
     });
   }
   if(userData && userData.user && userData.user.role !== 'user'){
     listTab.splice(2, 0, {
       iconWhite: NotificationWhiteIcon,
       iconOrange: NotificationOrangeIcon,
-      navigate: "/notification",
+      navigate: "/cnpm-prj-deploy/notification",
     })
   }
   async function logoutApp(){
@@ -75,14 +75,14 @@ function SideBar() {
   }
 
   function handleLogout(item){
-    if(item.navigate === "/login"){
+    if(item.navigate === "/cnpm-prj-deploy/login"){
       logoutApp();
     }
   }
   return (
     <>
       <div className="container-sidebar">
-        <div className="logo" onClick={() => navigate("/")}>
+        <div className="logo" onClick={() => navigate("/cnpm-prj-deploy/")}>
           <img src={Logo} alt="Logo" />
         </div>
         {listTab.map((item) => (
@@ -90,14 +90,14 @@ function SideBar() {
             <div
               className={
                 "item-sidebar" +
-                (location.pathname.includes(item.navigate.split("/").at(1)) &&
+                (location.pathname.includes(item.navigate.split("/").at(2)) &&
                 item.navigate.length > 1
                   ? " item-active"
                   : "")
               }
             >
               <div className={"border-icon"}>
-                {location.pathname.includes(item.navigate.split("/").at(1)) &&
+                {location.pathname.includes(item.navigate.split("/").at(2)) &&
                 item.navigate.length > 1 ? (
                   <>
                     <img className="pattern" src={Pattern} alt="icon-tab" />

@@ -32,7 +32,7 @@ function AddFood() {
         },
       });
       showSnackbar("Thêm món ăn thành công");
-      navigate("/setting/product-manager");
+      navigate("/cnpm-prj-deploy/setting/product-manager");
     } catch (e) {
       if(e.response.status === 400){
         showSnackbar("Món ăn đã tồn tại");
@@ -159,7 +159,7 @@ function AddFood() {
               <button
                 className="discard-changes btn-pro"
                 type="button"
-                onClick={() => navigate("/setting/product-manager")}
+                onClick={() => navigate("/cnpm-prj-deploy/setting/product-manager")}
               >
                 Hủy bỏ
               </button>
