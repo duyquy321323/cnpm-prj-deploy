@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cnpm-prj-deploy/static/css/main.5e715839.css",
-    "main.js": "/cnpm-prj-deploy/static/js/main.e966a2fb.js",
+    "main.js": "/cnpm-prj-deploy/static/js/main.6a4c4396.js",
     "static/js/453.02a0e1e2.chunk.js": "/cnpm-prj-deploy/static/js/453.02a0e1e2.chunk.js",
     "static/media/pexels-rachel-claire-4577179 2.png": "/cnpm-prj-deploy/static/media/pexels-rachel-claire-4577179 2.c546864516ff41aef2a9.png",
     "static/media/Detail3.svg": "/cnpm-prj-deploy/static/media/Detail3.18ffd7f223eefb505252f70cb571c7b3.svg",
@@ -41,11 +41,11 @@
     "static/media/Plus 24px.svg": "/cnpm-prj-deploy/static/media/Plus 24px.ccb9b63d93966fad69bd4443f95a69d4.svg",
     "static/media/Back.svg": "/cnpm-prj-deploy/static/media/Back.b10ef9415029833233366225af7bd563.svg",
     "main.5e715839.css.map": "/cnpm-prj-deploy/static/css/main.5e715839.css.map",
-    "main.e966a2fb.js.map": "/cnpm-prj-deploy/static/js/main.e966a2fb.js.map",
+    "main.6a4c4396.js.map": "/cnpm-prj-deploy/static/js/main.6a4c4396.js.map",
     "453.02a0e1e2.chunk.js.map": "/cnpm-prj-deploy/static/js/453.02a0e1e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e715839.css",
-    "static/js/main.e966a2fb.js"
+    "static/js/main.6a4c4396.js"
   ]
 }
