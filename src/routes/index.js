@@ -29,24 +29,24 @@ const userData = localStorage.getItem("userData");
 
 export const routes = [
   {
-    path: "/",
+    path: "/cnpm-prj-deploy/",
     element: <Layout1 />,
     children: [
       {
-        path: "/",
+        path: "/cnpm-prj-deploy/",
         element: <Home />,
       },
       {
-        path: "/login",
+        path: "/cnpm-prj-deploy/login",
         element: <Login title="Welcome Back .!" content="Skip the lag ?" />,
       },
       {
-        path: "/sign-up",
+        path: "/cnpm-prj-deploy/sign-up",
         // element: <SignUp title="Roll the Carpet .!" content="Skip the lag ?" />,
         element: <SignUp />,
       },
       {
-        path: "/forget-password",
+        path: "/cnpm-prj-deploy/forget-password",
         element: (
           <ForgetPassword  />
         ),
@@ -54,63 +54,63 @@ export const routes = [
     ],
   },
   {
-    path: "/book-table",
+    path: "/cnpm-prj-deploy/book-table",
     element: <BookTable />,
   },
   {
-    path: "/",
+    path: "/cnpm-prj-deploy/",
     element: <Layout2 />,
     children: [
       {
-        path: "/menu",
+        path: "/cnpm-prj-deploy/menu",
         element: <Menu />,
       },
       {
-        path: "/detail-food/:slug",
+        path: "/cnpm-prj-deploy/detail-food/:slug",
         element: <DetailFood />,
       },
       {
-        path: "/information-to-delivery",
+        path: "/cnpm-prj-deploy/information-to-delivery",
         element: <InformationToDelivery />,
       },
     ],
   },
   {
-    path: "/",
+    path: "/cnpm-prj-deploy/",
     element: <Layout3 />,
     children: [
       {
-        path: "/dashboard",
+        path: "/cnpm-prj-deploy/dashboard",
         element: <DashBoard />,
       },
     ],
   },
   {
-    path: "/",
+    path: "/cnpm-prj-deploy/",
     element: <Layout4 />,
     children: [
       {
-        path: "/setting",
+        path: "/cnpm-prj-deploy/setting",
         element: <SettingLayout />,
         children: [
           {
-            path: "/setting/update-information",
+            path: "/cnpm-prj-deploy/setting/update-information",
             element: <UpdateInformation />,
           },
           {
-            path: "/setting/add-employee",
+            path: "/cnpm-prj-deploy/setting/add-employee",
             element: <AddEmployee />,
           },
           {
-            path: "/setting/product-manager",
+            path: "/cnpm-prj-deploy/setting/product-manager",
             element: <ProductManager />,
           },
           {
-            path: "/setting/product-manager/add-new-food",
+            path: "/cnpm-prj-deploy/setting/product-manager/add-new-food",
             element: <AddFood />,
           },
           {
-            path: "/setting/product-manager/edit-food/:slug",
+            path: "/cnpm-prj-deploy/setting/product-manager/edit-food/:slug",
             element: <EditFood />,
           },
         ],
@@ -118,29 +118,29 @@ export const routes = [
     ],
   },
   {
-    path: "/",
+    path: "/cnpm-prj-deploy/",
     element: <Layout5 />,
     children: [
       {
-        path: "/notification",
+        path: "/cnpm-prj-deploy/notification",
         element: <Notification />,
       },
       {
-        path: '/detail-order/:id',
+        path: '/cnpm-prj-deploy/detail-order/:id',
         element: <DetailOrder/>
       },
       {
-        path: "/history",
+        path: "/cnpm-prj-deploy/history",
         element: <History />,
       },
     ],
   },
   {
-    path: '/success-payment',
+    path: '/cnpm-prj-deploy/success-payment',
     element: <SuccessPayment/>
   },
   {
-    path: '/cancel-payment',
+    path: '/cnpm-prj-deploy/cancel-payment',
     element: <CancelPayment/>
   },
   {
